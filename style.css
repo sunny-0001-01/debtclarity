@@ -1,0 +1,128 @@
+body{
+margin:0;
+font-family:Inter,Arial;
+}
+
+/* ================= HOME ================= */
+
+.home{
+background:linear-gradient(135deg,#fdfbfb,#ebedee);
+color:#0f172a;
+}
+
+.wrap{
+max-width:1100px;
+margin:auto;
+padding:70px 25px;
+}
+
+.title{text-align:center;font-size:40px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
+margin-top:60px;
+}
+
+.box{
+padding:45px 35px;
+border-radius:28px;
+text-align:center;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+transition:.3s;
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.gold{background:#fde68a;color:#92400e}
+.blue{background:#bfdbfe;color:#1e3a8a}
+.purple{background:#e9d5ff;color:#581c87}
+.emerald{background:#a7f3d0;color:#065f46}
+.rose{background:#fecdd3;color:#881337}
+.silver{background:#e2e8f0;color:#020617}
+
+.box:hover{transform:translateY(-8px)}
+
+/* ================= TOOL PAGE ================= */
+
+.tool{
+background:linear-gradient(135deg,#fff7ed,#eff6ff,#faf5ff);
+color:#020617;
+min-height:100vh;
+}
+
+.back{
+color:#2563eb;
+text-decoration:none;
+font-weight:600;
+}
+
+/* colorful glass cards */
+
+.card{
+background:rgba(255,255,255,.6);
+border:1px solid rgba(255,255,255,.8);
+padding:30px;
+border-radius:24px;
+margin:30px 0;
+backdrop-filter:blur(20px);
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+input{
+width:100%;
+padding:14px;
+margin:10px 0;
+border-radius:12px;
+border:1px solid #c7d2fe;
+background:white;
+color:#020617;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:16px;
+margin-top:10px;
+border:none;
+border-radius:16px;
+background:linear-gradient(90deg,#6366f1,#22d3ee);
+color:white;
+font-weight:700;
+cursor:pointer;
+}
+
+button:hover{transform:scale(1.03)}
+
+table{
+width:100%;
+margin-top:30px;
+border-collapse:collapse;
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+td,th{
+padding:12px;
+border-bottom:1px solid #e5e7eb;
+text-align:center;
+font-size:14px;
+color:#020617;
+}
+
+canvas{
+width:100%;
+height:260px;
+margin-top:35px;
+}
+
+#summary h2{color:#4f46e5}
+
+#summary ul{
+padding-left:20px;
+color:#020617;
+}

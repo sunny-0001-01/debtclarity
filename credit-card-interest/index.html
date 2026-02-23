@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Credit Card Interest Calculator</title>
+<link rel="stylesheet" href="../style.css">
+<meta name="description" content="Calculate your credit card interest, payoff time, and real cost instantly. Free US credit card interest calculator.">
+</head>
+
+<body class="tool">
+
+<div class="wrap">
+
+<a class="back" href="../index.html">← Home</a>
+
+<h1>Credit Card Interest Calculator</h1>
+
+<p>Enter your balance, APR, and monthly payment to see your true payoff cost.</p>
+
+<div class="card">
+
+<input id="balance" placeholder="Balance ($)">
+<input id="apr" placeholder="APR (%)">
+<input id="paymentA" placeholder="Monthly Payment ($)">
+
+<button onclick="interestCalc()">Calculate My Debt</button>
+
+</div>
+
+<div id="summary"></div>
+
+<canvas id="chart"></canvas>
+
+<div class="card">
+<h3>Monthly Breakdown</h3>
+
+<table>
+<thead>
+<tr><th>Month</th><th>Interest</th><th>Principal</th><th>Balance</th></tr>
+</thead>
+<tbody id="schedule"></tbody>
+</table>
+</div>
+
+<!-- ================= EDUCATIONAL CONTENT ================= -->
+
+<section style="margin-top:60px;max-width:800px;line-height:1.7">
+
+<h2>How Credit Card Interest Works</h2>
+
+<p>
+Credit card interest is calculated monthly using your APR. Each billing cycle, interest is added to your remaining balance before your payment is applied. This means early payments mostly go toward interest instead of reducing your debt.
+</p>
+
+<h3>Real-Life Example</h3>
+
+<p>
+Example: If you owe $5,000 at 24% APR and pay $150 per month, you could take around 4 years to fully repay the balance and spend over $1,800 in interest alone. That means more than one-third of your original debt goes purely toward interest.
+</p>
+
+<h3>Why Minimum Payments Are Dangerous</h3>
+
+<p>
+Minimum payments are designed to keep balances active longer. While they prevent late fees, they usually barely reduce your principal. Over time, this can result in paying significantly more than your original purchase amount.
+</p>
+
+<h3>The Real Cost of Credit Card Debt</h3>
+
+<p>
+Your purchase price is only part of the story. After interest accumulates, a $5,000 balance at 24% APR can easily cost over $7,000 depending on your monthly payment size. Higher APRs or lower payments dramatically increase total cost.
+</p>
+
+<h3>Common Credit Card Mistakes</h3>
+
+<ul>
+<li>Paying only the minimum every month.</li>
+<li>Adding new purchases while trying to reduce debt.</li>
+<li>Ignoring APR differences between cards.</li>
+<li>Using credit cards for long-term financing.</li>
+</ul>
+
+<h3>Who Should Use This Calculator?</h3>
+
+<ul>
+<li>Anyone carrying a credit card balance.</li>
+<li>People planning a debt payoff strategy.</li>
+<li>Users comparing payment options.</li>
+<li>Individuals wanting to understand the true cost of borrowing.</li>
+</ul>
+
+<h3>How to Pay Off Credit Cards Faster</h3>
+
+<ul>
+<li>Increase your monthly payment whenever possible.</li>
+<li>Avoid new charges while paying down debt.</li>
+<li>Consider balance transfers with lower APR offers.</li>
+<li>Stay consistent — even small extra payments reduce total interest.</li>
+</ul>
+
+<h3>Frequently Asked Questions</h3>
+
+<p><b>Is this calculator accurate?</b><br>
+It provides estimates using standard monthly compounding methods. Actual results may vary slightly by card issuer.
+</p>
+
+<p><b>Does this include fees?</b><br>
+No — late fees, annual fees, and penalties are not included.
+</p>
+
+<p><b>Is this financial advice?</b><br>
+No. This tool is provided for educational purposes only.
+</p>
+
+</section>
+
+<footer style="margin-top:60px;border-top:1px solid #e5e7eb;padding-top:20px;color:#64748b">
+
+<a href="../privacy.html">Privacy Policy</a> |
+<a href="../contact.html">Contact</a>
+
+<p>Educational use only • Not financial advice</p>
+
+</footer>
+
+</div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
